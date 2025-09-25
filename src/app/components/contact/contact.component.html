@@ -1,0 +1,18 @@
+<div class="flex flex-col gap-5" >
+    <div *ngIf="appear" class="flex flex-col gap-2">
+        <img class="w-12 h-12 rounded-full cursor-pointer animate-pulse" src="../../../assets/email.png" alt="" (click)="goTo('mailto:malaaaaak52@gmail.com')">
+        <img class="w-12 h-12 rounded-full cursor-pointer animate-pulse" src="../../../assets/facebook.png" alt="" (click)="goTo('https://www.facebook.com/profile.php?id=100070341354767')" >
+        <img class="w-12 h-12 rounded-full cursor-pointer animate-pulse" src="../../../assets/linkedin.png" alt="" (click)="goTo('https:/www.linkedin.com/in/malksobhy')">
+        <img class="w-12 h-12 rounded-full cursor-pointer animate-pulse" src="../../../assets/whatsapp.png" alt="" (click)="goTo('https://wa.me/2001128554899')">
+    </div>
+  <img 
+  (click)="toggle()"
+  *ngIf="!appear"
+    class="w-12 h-12 animate-spin rounded-full cursor-pointer transition-transform duration-300 hover:scale-125"
+    src="../../../assets/contact.png" 
+    alt=""
+  />
+ 
+
+</div>
+
