@@ -19,7 +19,7 @@ export class ProjectsComponent {
         '../../../assets/h5.jpg',
         '../../../assets/h6.jpg',
       ],
-      skills: ['React Native', 'Firebase'],
+      skills: ['React Native', 'Firebase', 'TypeScript', 'Team Leader'],
       mobile: true,
     },
     {
@@ -29,7 +29,7 @@ export class ProjectsComponent {
       details:
         'Book Me is your ultimate hotel booking solution. This project is designed to provide a simple, user-friendly platform to search, browse, and reserve hotel rooms online — whether for a quick getaway or a business trip.',
       images: ['../../../assets/bookme1.png'],
-      skills: ['React', 'Express.js', 'MongoDB'],
+      skills: ['React', 'Express.js', 'MongoDB', 'Team Work'],
       mobile: false,
     },
   ];

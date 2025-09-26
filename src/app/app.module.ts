@@ -13,6 +13,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CvComponent } from './components/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     SingleProjectComponent,
     ContactComponent,
+    CvComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
