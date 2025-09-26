@@ -5,17 +5,20 @@
 
 
 <div class="flex flex-col gap-5 my-5 ">    
-  <div class=" flex bg-gray-100 border shadow hover:shadow-lg transition rounded-md p-5 cursor-pointer" *ngFor="let pro of projects"  [routerLink]="['/projects', pro.id]">
+  <div class=" flex flex-col lg:flex-row bg-gray-100 border shadow hover:shadow-lg transition rounded-md p-5 cursor-pointer" *ngFor="let pro of projects"  [routerLink]="['/projects', pro.id]">
 
-    <div class="w-3/4 p-5">
+    <div class="w-full lg:w-3/4 p-5">
       <h1 class="text-pink-600"> {{pro.name}} </h1>
       <h2 class="text-gray-800"> {{pro.date}} </h2>
       <p> {{pro.details}} </p>
     </div>
-    <div class="w-1/4">
+    <div class="w-full flex justify-center lg:w-1/4">
         <img 
-        [ngClass]="pro.mobile ? 'w-[150px] h-[200px]' : 'w-[300px] h-[200px]'"
-        [src]='pro.images[0]' alt="">
+        [ngClass]="pro.mobile 
+        ? 'w-[150px] h-[200px]' 
+        : 'w-[300px] lg:w-[400px] h-[200px]'"
+        [src]='pro.images[0]'
+        alt="">
     </div>
      
   </div>
